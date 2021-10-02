@@ -1,59 +1,225 @@
-body  
-{  
-    margin: 0;  
-    padding: 0;  
-    background-color:#FFFFFF;  
-    font-family: 'Arial';  
-}  
-.login{  
-        width: 382px;  
-        overflow: hidden;  
-        margin: auto;  
-        margin: 20 0 0 450px;  
-        padding: 80px;  
-        background: #0000FF;  
-        border-radius: 15px ;  
-          
-}  
-h2{  
-    text-align: center;  
-    color: #FFFFFF;  
-    padding: 20px;  
-}  
-label{  
-    color: #FFFFFF;  
-    font-size: 17px;  
-}  
-#Uname{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 3px;  
-    padding-left: 8px;  
-}  
-#Pass{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 3px;  
-    padding-left: 8px;  
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*.sidebar.nav css*/
+
+.sidebar{
+    position:fixed;
+     
+    width: 250px;
+    height: 100%;
+    background: rgb(4, 178, 236);
+    transition: all 0.5s ease;
+}
+
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    transition: 0.3s;
+}
+
+ul li:hover a{
+    padding-left: 10px;
+    background: rgb(8, 8, 255);
+}
+
+.sidebar ul a i{  
+    align-content: left;
+    margin-right: 15px;
+    width: 20px;
+    
+    font-size: 25px;
+
+}
+.sidebar li .linkpage{
+    text-align: center;
+    font-size: 25px;
+    
+    
+}
+
+/*websitename.css*/
+.website{
+    background: white;
+}
+.websitename{
+   align-content: center;
+    font-size: 35px;
+    font-family: fantasy;
+  
+}
+/*Students page css*/
+.student-section{
+    background: white;
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% - 250px);
+    left: 250px;
+    transition: all 0.5s ease;
+}
+
+.student-section nav{
+    height: 77.5px;
+    background: rgb(4, 178, 236);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+.student-section nav .sidebar-button{
+        display: flex;
+        align-items:center;
+        font-size: 30px;
+        font-weight: 600;
+}
+.student-section nav .sidebar-button i{
+    font-size: 30px;
+    margin-right: 10px;
+
+
+    color: black;
+}
+nav .profile-details{
+        display: flex;
+        align-items:center;
+        font-size: 30px;
+        font-weight: 600;
+}
+nav .profile-details i{
+    font-size: 30px;
+    margin-right: 10px;
+
+}
+/*adding students menu*/
+.addingstudents{
+        display: flex;
+        align-items:center;
+        font-size: 30px;
+        font-weight: 600 ;
+        justify-content: space-between;
+        box-sizing: border-box;
+       
+        border-bottom: 1px solid black;
+        padding: 10px;
+    }
+
+
+/*pill button*/
+input.largerCheckbox {
+    transform : scale(2);
+    margin: 15px;
+}
+.action {
+        display: flex;
+        align-items:center;
+        
+       
+        box-sizing: border-box;
+        
+        border-bottom: 1px solid black;
+        padding: 15px;
+
+}
+
+.remove{
+    background-color: #ddd;
+    border: none;
+    margin-left: 35px;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    font-size: 15px ;
+    text-decoration: none;
+    display: inline-block;
+   
+    cursor: pointer;
+    border-radius: 16px;
+    
+  }
+  
+  .remove:hover {
+    background-color: rgb(4, 178, 236);
+  }
+  /*List of students*/
+  .List table{
+    font-size: 30px;
+    width: 100%;
+  }
+  tr{
+      text-align:left;
+     border-collapse: unset;
+  }
+  table{
+    width: 100%;
+  }
+  th{
+    
+   
+    padding: 10px;
+    border-bottom: 1px solid black;
+  }
+  td{ font-size: 25px;
+    border-bottom: 1px solid black;
+  }
+
+  /*Dropdown button*/
+  /* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 3px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: grey;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: left;
+    display: inline-block;
+    border-spacing: 0px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+   display: none;
+    position:left;
+    background-color: #f1f1f1;
+    min-width: 0px;
+   
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
       
-}  
-#log{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 17px;  
-    padding-left: 7px;  
-    color: blue;  
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+   display: inline-block;
+  }
   
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(4, 178, 236)}
   
-}  
-span{  
-    color: white;  
-    font-size: 17px;  
-}  
-a{  
-    float: right;  
-    background-color: grey;  
-}  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}

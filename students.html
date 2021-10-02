@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Admin</title>
+    </head>
+    <body>
+        
+        <div class="sidebar">
+            <div class="website">
+                <img src="schedule_logo-01.png" alt="Logo" style="width:70px;height:70px;">
+                <span class="websitename" >SCHEDULING</span>
+            </div>
+            
+            <ul>
+                <li><a href="#"><i class="fa fa-home fa-lg"></i><span class="linkpage">Home</span></a></li>
+                <li><a href="#"><i class="fa fa-calendar fa-lg"></i><span class="linkpage">Classes</span></a></li>
+                <li><a href="#"><i class="fa fa-user fa-lg"></i><span class="linkpage">Students</span></a></li>
+            </ul>
+        </div>
+           
+       <div >
+            <!--Students list page-->
+            <section class="student-section">
+            <nav>
+                <div class="sidebar-button">
+                    <a href="#" onclick="back()">
+                    <i class="fa fa-arrow-left fa-lg"></i></a>
+                    <span class="text">Students</span>
+                </div>
+                <div class="profile-details">
+                    
+                    <i class="fa fa-user fa-lg"></i>
+                    <span class="admin-name">Admin</span>
+                   
+                </div>
+            </nav>
+                <!--Student page content-->
+                    <div class="addingstudents">
+                        <div class="Student">
+                            <span class="text">Students</span>
+                        </div>
+                        <div class="addstudents">
+                            <a href="#" onclick="notaddedstudents()">
+                                <i class="fa fa-plus-square fa-lg"></i> </a>
+                                <span class="text">Add students</span>
+                        </div>
+                    </div>
+                
+                        <!--actions tab-->
+                    <div class="action">
+                        
+                        <button class="remove">Remove students</button>                          
+                    </div>
+                          <!--List of Students-->
+                <div   class="List">
+                    <div class="StudentList">
+         <table>
+                <tr>
+                   
+                       <th> <i class="fa fa-user fa-lg" ></i>
+                    Name</th>
+                    <th>Courses</th>
+                </tr>
+                
+                    <tr>
+                            <td>
+                                <input type="checkbox" class="largerCheckbox" name="Checkbox3" > 
+                    <i class="fa fa-user fa-lg"></i>
+                    Binay Shah</td>
+                   <td> ITECH 3208</td>
+                   <td>
+                       <a href="#" onclick="myFunction()" class="dropbtn"><i class="fa fa-ellipsis-v fa-lg">
+                          
+                       </i> <div id="myDropdown" class="dropdown-content">Remove</a></div></a>
+
+                    </td>
+                   </tr>
+
+                
+                    <tr> 
+                        <td>
+                            <input type="checkbox" class="largerCheckbox" name="Checkbox4" > 
+                    <i class="fa fa-user fa-lg"></i>
+                    Smriti Shah</td> 
+                    <td>ITECH 3208</td>
+                    <td>
+                        <a href="#" onclick="myFunction()" class="dropbtn"><i class="fa fa-ellipsis-v fa-lg">
+                           
+                        </i> <div id="myDropdown" class="dropdown-content">Remove</a></div></a>
+ 
+                     </td>
+                    </tr>
+                 
+                        <tr>
+                            <td><input type="checkbox" class="largerCheckbox" name="Checkbox5" >
+                    <i class="fa fa-user fa-lg"></i>
+                    Dinesh Karki</td>
+                    <td> ITECH 3208</td>
+                    <td>
+                        <a href="#" onclick="myFunction()" class="dropbtn"><i class="fa fa-ellipsis-v fa-lg">
+                           
+                        </i> <div id="myDropdown" class="dropdown-content">Remove</a></div></a>
+ 
+                     </td>
+                    </tr>
+                
+                <tr> 
+                    <td>
+                        <input type="checkbox" class="largerCheckbox" name="Checkbox6" > 
+                <i class="fa fa-user fa-lg"></i>
+                Dinesh DC</td> 
+                <td>ITECH 3208</td>
+                <td>
+                    <a href="#" onclick="myFunction()" class="dropbtn"><i class="fa fa-ellipsis-v fa-lg">
+                       
+                    </i> <div id="myDropdown" class="dropdown-content">Remove</a></div></a>
+
+                 </td>
+                </tr>
+                
+                    <tr>
+                        <td><input type="checkbox" class="largerCheckbox" name="Checkbox7" >
+                <i class="fa fa-user fa-lg"></i>
+                Rudra Khadka</td>
+                <td> ITECH 3208</td>
+                <td>
+                    <a href="#" onclick="myFunction()" class="dropbtn"><i class="fa fa-ellipsis-v fa-lg">
+                       
+                    </i> <div id="myDropdown" class="dropdown-content">Remove</a></div></a>
+
+                 </td>
+                </tr>
+            </a>
+             
+                  
+            </table>
+                </div>
+
+            </section>
+      <script src="script.js"></script>
+        </body>
+        </html>
